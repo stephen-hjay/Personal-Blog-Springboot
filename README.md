@@ -41,35 +41,36 @@ This system is deployed on a CentOS server with Tomcat being server.
 
 
 
-## Demo Pics
+## Demo Snapshot
 
 ## * Front Stage
 
-## Home Page
+### Home Page
 
 ![image-20210223232453753](README.assets/image-20210223232453753.png)
 
-## Blogs by Type
+### Blogs by Type
 
 ![image-20210223232424215](README.assets/image-20210223232424215.png)
 
-## Blogs By Tags
+### Blogs By Tags
 
 ![image-20210223232435599](README.assets/image-20210223232435599.png)
 
 
 
-## Blog Details (Demo)
+### Blog Details (Demo)
 
 ![image-20210223232531325](README.assets/image-20210223232531325.png)
 
 
 
-## Search Result
+### Search Result
 
 ![image-20210223232605936](README.assets/image-20210223232605936.png)
 
-## About Me
+
+### About Me
 
 ![image-20210223232509804](README.assets/image-20210223232509804.png)
 
