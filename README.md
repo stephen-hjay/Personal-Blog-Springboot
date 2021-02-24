@@ -5,7 +5,7 @@
 * Project: Hjay's Personal Blog System  
 
 ##  Description:
-This web project is intended for my personal website. It is mainly to used to share I have learnt and my life. 
+This web project is intended for my personal website. It is mainly used to share what I have learnt and my life. 
 
 I will upload my everyday learning notes and IT-related articles on it. 
 
