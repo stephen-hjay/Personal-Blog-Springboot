@@ -15,7 +15,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * 首页index.html
+ * @Author: HJAY
+ * @Description: com.hjay.controller
+ * @version: 1.0
  */
 @Controller
 public class IndexController {

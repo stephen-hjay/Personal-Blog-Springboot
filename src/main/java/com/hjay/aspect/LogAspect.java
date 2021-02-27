@@ -12,9 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
 
 /**
- * @Auther: 南迪叶先生:https://www.cnblogs.com/ye888/
- * @Date: 2019/9/26
- * @Description: com.yrp.aspect
+ * @Author: HJAY
+ * @Description: com.hjay.aspect
  * @version: 1.0
  */
 @Aspect

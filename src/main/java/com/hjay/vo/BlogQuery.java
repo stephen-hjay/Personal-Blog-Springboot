@@ -1,9 +1,8 @@
 package com.hjay.vo;
 
 /**
- * @Auther: 南迪叶先生:https://www.cnblogs.com/ye888/
- * @Date: 2019/10/3
- * @Description: com.yrp.vo
+ * @Author: HJAY
+ * @Description: com.hjay.vo
  * @version: 1.0
  */
 public class BlogQuery {

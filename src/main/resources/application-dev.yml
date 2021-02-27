@@ -1,8 +1,13 @@
 #数据库驱动mysql
 spring:
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:mysql://localhost:3306/blogs?useUnicode=true&characterEncoding=utf-8
+#    username: root
+#    password: admin
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blogs?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://185.245.1.134:3306/blogs?useUnicode=true&characterEncoding=utf-8
     username: root
     password: admin
   jpa:
@@ -17,4 +22,4 @@ logging:
     com.yrp: debug
   file: log/blog-dev.log
 server:
-  port: 8080
+  port: 3030

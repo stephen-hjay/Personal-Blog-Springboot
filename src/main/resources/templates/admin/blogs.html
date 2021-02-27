@@ -5,13 +5,13 @@
     <!--移动端预览-->
     <meta name="viewport" content="device-width, initial-scale=1.0">
 
-    <title>后台管理-博客管理</title>
+    <title>Admin|Blogs</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
     <!--引入自定义CSS-->
     <link rel="stylesheet" href="../../static/css/me.css">
 </head>
 <body>
-    <!--导航-->
+    <!--导航 _fragements 管理-->
     <nav th:replace="admin/_fragments :: menu(1)" class="ui inverted attached segment segment m-padded-tb-mini m-shadow-small">
         <div class="ui container">
             <div class="ui inverted secondary stackable menu">
@@ -39,12 +39,15 @@
             <i class="sidebar icon"></i>
         </a>
     </nav>
+
+
+
     <!--二级导航-->
     <div class="ui attached pointing menu">
       <div class="ui container">
           <div class="right menu">
-              <a href="#" th:href="@{/admin/blogs/input}" class="item">发布</a>
-              <a href="#" th:href="@{/admin/blogs}"  class="active teal basic item">列表</a>
+              <a href="#" th:href="@{/admin/blogs/input}" class="item">Publish</a>
+              <a href="#" th:href="@{/admin/blogs}"  class="active teal basic item">List</a>
           </div>
       </div>
     </div>
@@ -57,14 +60,14 @@
                 <input type="hidden" name="page">
                 <div class="inline fields">
                     <div class="field">
-                        <input type="text" name="title" placeholder="标题">
+                        <input type="text" name="title" placeholder="Title">
                     </div>
                     <div class="field">
                         <div class="ui labeled action input">
                             <div class="ui type selection dropdown">
                                 <input type="hidden" name="typeId">
                                 <i class="dropdown icon"></i>
-                                <div class="default text">分类</div>
+                                <div class="default text">Category</div>
                                 <div class="menu">
                                     <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}" th:text="${type.name}">旅行</div>
                                     <!--/*-->
@@ -82,7 +85,7 @@
                         <!--推荐-->
                         <div class="ui checkbox">
                             <input type="checkbox"  id="recommend" name="recommend">
-                            <label for="recommend">推荐</label>
+                            <label for="recommend">Recommend</label>
                         </div>
                     </div>
                     <div class="field">
@@ -134,7 +137,7 @@
             <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
                 <i class="close icon"></i>
                 <div class="header">提示：</div>
-                <p th:text="${message}">恭喜，操作成功！</p>
+                <p th:text="${message}">Operation Succeed</p>
             </div>
         </div>
     </div>

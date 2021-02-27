@@ -23,60 +23,110 @@
             <div class="ui top attached segment">
                 <div class="ui middle aligned two column grid">
                     <dvi class="column">
-                        <h3 class="ui teal header">搜索结果</h3>
+                        <h3 class="ui teal header">Results</h3>
                     </dvi>
                     <dvi class="right aligned column">
-                        共 <h2 class="ui orange header m-inline-blok m-text-thin" th:text="${page.totalElements}">14</h2>个
+                         <h2 class="ui orange header m-inline-blok m-text-thin" th:text="${page.totalElements}">14</h2>articles related in total
                     </dvi>
                 </div>
             </div>
+
             <!--分类列表区域-->
-            <div class="ui attached segment m-padded-tb-large   ">
-                <a href="" class="ui teal basic center pointing large label ">
-                    JavaEE
-                    <div class="detail">23</div>
-                </a>
-                <a href="" class="ui  basic center pointing large label ">
-                    Spring
-                    <div class="detail">23</div>
-                </a>
-                <a href="" class="ui  basic center pointing large label ">
-                    SpringMVC
-                    <div class="detail">23</div>
-                </a>
-                <a href="" class="ui  basic center pointing large label ">
-                    SpringBoot
-                    <div class="detail">23</div>
-                </a>
-                <a href="" class="ui  basic center pointing large label ">
-                    JavaSE
-                    <div class="detail m-margin-tb-tiny ">23</div>
-                </a>
-                <a href="" class="ui  basic center pointing large label ">
-                    Oracle
-                    <div class="detail">4</div>
-                </a>
-                <a href="" class="ui  basic center pointing large label ">
-                    MySQL
-                    <div class="detail">2</div>
-                </a>
-                <a href="" class="ui  basic center pointing large label ">
-                    Redis
-                    <div class="detail">3</div>
-                </a>
-                <a href="" class="ui  basic center pointing large label ">
-                    Dubbo
-                    <div class="detail">2</div>
-                </a>
-                <a href="" class="ui  basic center pointing large label ">
-                    JavaScript
-                    <div class="detail">23</div>
-                </a>
-                <a href="" class="ui  basic center pointing large label ">
-                    jQuery
-                    <div class="detail">23</div>
-                </a>
-            </div>
+<!--            &lt;!&ndash;分类列表区域&ndash;&gt;-->
+<!--            <div class="ui attached segment m-padded-tb-large   ">-->
+<!--                <a href="#" th:href="@{/tags/{id}(id=${tag.id})}"  th:classappend="${tag.id==avtiveTagId }? 'teal'"  class="ui  basic center pointing large label " th:each="tag : ${tags}">-->
+<!--                    <span th:text="${tag.name}">JavaEE</span>-->
+<!--                    <div class="detail" th:text="${#arrays.length(tag.blogs)}">23</div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash;/*&ndash;&gt;-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    Spring-->
+<!--                    <div class="detail">23</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    SpringMVC-->
+<!--                    <div class="detail">23</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    SpringBoot-->
+<!--                    <div class="detail">23</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    JavaSE-->
+<!--                    <div class="detail m-margin-tb-tiny ">23</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    Oracle-->
+<!--                    <div class="detail">4</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    MySQL-->
+<!--                    <div class="detail">2</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    Redis-->
+<!--                    <div class="detail">3</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    Dubbo-->
+<!--                    <div class="detail">2</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    JavaScript-->
+<!--                    <div class="detail">23</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    jQuery-->
+<!--                    <div class="detail">23</div>-->
+<!--                </a>-->
+<!--                &lt;!&ndash;*/&ndash;&gt;-->
+<!--            </div>-->
+            <!--            <div class="ui attached segment m-padded-tb-large   ">-->
+<!--                <a href="" class="ui teal basic center pointing large label ">-->
+<!--                    JavaEE-->
+<!--                    <div class="detail">23</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    Spring-->
+<!--                    <div class="detail">23</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    SpringMVC-->
+<!--                    <div class="detail">23</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    SpringBoot-->
+<!--                    <div class="detail">23</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    JavaSE-->
+<!--                    <div class="detail m-margin-tb-tiny ">23</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    Oracle-->
+<!--                    <div class="detail">4</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    MySQL-->
+<!--                    <div class="detail">2</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    Redis-->
+<!--                    <div class="detail">3</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    Dubbo-->
+<!--                    <div class="detail">2</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    JavaScript-->
+<!--                    <div class="detail">23</div>-->
+<!--                </a>-->
+<!--                <a href="" class="ui  basic center pointing large label ">-->
+<!--                    jQuery-->
+<!--                    <div class="detail">23</div>-->
+<!--                </a>-->
+<!--            </div>-->
             <!--博客列表-->
             <div class="ui top attached teal segment">
                 <div class="ui padded vertical segment m-padded-tb-large" th:each="blog : ${page.content}">

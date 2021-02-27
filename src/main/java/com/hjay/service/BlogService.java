@@ -8,10 +8,9 @@ import org.springframework.data.domain.Pageable;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @Auther: 南迪叶先生:https://www.cnblogs.com/ye888/
- * @Date: 2019/10/3
- * @Description: com.yrp.po
+ /**
+ * @Author: HJAY
+ * @Description: com.hjay.service
  * @version: 1.0
  */
 public interface BlogService {

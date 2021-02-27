@@ -10,6 +10,11 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ * @Author: HJAY
+ * @Description: com.hjay.handler;
+ * @version: 1.0
+ */
 @ControllerAdvice
 public class ControllerExceptionHandler {
 

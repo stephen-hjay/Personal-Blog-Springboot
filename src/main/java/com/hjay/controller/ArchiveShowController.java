@@ -7,9 +7,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 /**
- * @Auther: 南迪叶先生:https://www.cnblogs.com/ye888/
- * @Date: 2019/10/15
- * @Description: com.yrp.controller.admin
+ * @Author: HJAY
+ * @Description: com.hjay.controller
  * @version: 1.0
  */
 @Controller
